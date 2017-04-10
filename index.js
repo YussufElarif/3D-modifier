@@ -3,12 +3,21 @@ AvatarThreeDee.init(element);
 
 function Avatar() {
     return {
-        head: AvatarThreeDee.createObject("head", { y: 250 }),
+        head: head(),
         upperBody: AvatarThreeDee.createObject("upperBody"),
         lowerBody: AvatarThreeDee.createObject("lowerBody", { y: -250 }),
         rightArm: AvatarThreeDee.createObject("rightArm", { x: 250 }),
         leftArm: AvatarThreeDee.createObject("leftArm", { x: -250 })
     }
+}
+
+function head() {
+    var radius = 100
+    var segments = 64;
+    var geometry = new THREE.SphereGeometry(100, 10, 10);
+    var material = new THREE.MeshBasicMaterial({ color: 0xffff00, wireframe: true });
+
+    return AvatarThreeDee.createObject("head", { y: 250 }, material, geometry);
 }
 
 var avatar = new Avatar();
