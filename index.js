@@ -14,6 +14,7 @@ var avatar = new Avatar();
 
 AvatarThreeDee.addObjectModel(avatar);
 
-avatar.head.set(new Avatar().head);
+var child = avatar.head.set(new Avatar().head);
+child.material.color.setHex(0xffffff);
 
 

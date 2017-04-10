@@ -41,6 +41,7 @@ var AvatarThreeDee = (function(scene) {
 
     var setObject = function(parent, child) {
         parent.add(child);
+        return child;
     }
 
     var addObjectModel = function(objects) {
