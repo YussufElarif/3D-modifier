@@ -2,7 +2,7 @@ var AvatarThreeDee = (function(scene) {
     var camera, scene, renderer;
     var geometry, material;
 
-    var init = function() {
+    var init = function(ele) {
         scene = new THREE.Scene();
         camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 10000);
         camera.position.z = 1000;
@@ -10,7 +10,7 @@ var AvatarThreeDee = (function(scene) {
         renderer = new THREE.WebGLRenderer();
         renderer.setSize(window.innerWidth, window.innerHeight);
 
-        document.getElementById("3d").appendChild(renderer.domElement);
+        ele.appendChild(renderer.domElement);
         animate();
     }
 

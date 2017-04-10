@@ -1,4 +1,5 @@
-AvatarThreeDee.init();
+var element = document.getElementById("3d");
+AvatarThreeDee.init(element);
 
 function Avatar() {
     return {
