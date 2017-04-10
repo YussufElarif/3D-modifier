@@ -1,0 +1,22 @@
+{
+  "name": "3d-modifier",
+  "version": "1.0.0",
+  "description": "Test repo for testing 3D manipulation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vemuez/3D-modifier.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vemuez/3D-modifier/issues"
+  },
+  "homepage": "https://github.com/vemuez/3D-modifier#readme",
+  "dependencies": {
+    "three.js": "^0.77.1"
+  }
+}
