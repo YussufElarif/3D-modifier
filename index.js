@@ -14,7 +14,7 @@ function Avatar() {
 function head() {
     var radius = 100
     var segments = 64;
-    var geometry = new THREE.SphereGeometry(100, 10, 10);
+    var geometry = new THREE.SphereGeometry(100, 7, 7);
     var material = new THREE.MeshBasicMaterial({ color: 0xffff00, wireframe: true });
 
     return AvatarThreeDee.createObject("head", { y: 250 }, material, geometry);
