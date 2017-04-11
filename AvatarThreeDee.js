@@ -50,7 +50,7 @@ var AvatarThreeDee = (function (scene) {
     }
 
     var addObject = function (object) {
-        scene.add(objects);
+        scene.add(object);
     }
 
     return {
