@@ -16,7 +16,29 @@ var AvatarThreeDee = (function (scene) {
 
     var animate = function () {
         requestAnimationFrame(animate);
+
+        document.onkeydown = checkKey;
+
         renderer.render(scene, camera);
+    }
+
+    function checkKey(e) {
+
+        e = e || window.event;
+
+        if (e.keyCode == '38') {
+            scene.rotation.x -= 0.01;
+        }
+        else if (e.keyCode == '40') {
+            scene.rotation.x += 0.01;
+        }
+        else if (e.keyCode == '37') {
+            scene.rotation.y -= 0.01;
+        }
+        else if (e.keyCode == '39') {
+            console.log(scene);
+            scene.rotation.y += 0.01;
+        }
     }
 
     var createObject = function (name, positions, material = new THREE.MeshBasicMaterial({ color: 0x00ff7f, wireframe: true }), geometry = new THREE.BoxGeometry(200, 200, 200)) {
@@ -50,7 +72,7 @@ var AvatarThreeDee = (function (scene) {
     }
 
     var addObject = function (object) {
-        scene.add(objects);
+        scene.add(object);
     }
 
     return {
