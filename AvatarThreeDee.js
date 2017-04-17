@@ -56,8 +56,8 @@ var AvatarThreeDee = (function (scene) {
 
     var getObjectByName = function (name) {
         var object = scene.getObjectByName(name);
-        this.set = setObject.bind(null, object);
-        return this;
+        object["set"] = setObject.bind(null, object);
+        return object;
     }
 
     var setObject = function (parent, child) {
