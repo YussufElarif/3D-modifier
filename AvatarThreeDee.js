@@ -27,17 +27,17 @@ var AvatarThreeDee = (function (scene) {
         e = e || window.event;
 
         if (e.keyCode == '38') {
-            scene.rotation.x -= 0.01;
+            scene.rotation.x -= 0.02;
         }
         else if (e.keyCode == '40') {
-            scene.rotation.x += 0.01;
+            scene.rotation.x += 0.02;
         }
         else if (e.keyCode == '37') {
-            scene.rotation.y -= 0.01;
+            scene.rotation.y -= 0.02;
         }
         else if (e.keyCode == '39') {
             console.log(scene);
-            scene.rotation.y += 0.01;
+            scene.rotation.y += 0.02;
         }
     }
 
